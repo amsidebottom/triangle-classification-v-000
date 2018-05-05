@@ -16,11 +16,11 @@ class Triangle
       end
     else
       if @length1==@length2 and @length2==@length3
-        return equilateral
+        :equilateral
       elsif @length1==@length2 or @length2==@length3 or @length1==@length3
-        return isosceles
+        :isosceles
       else
-        return scalene
+        :scalene
       end
     end
   end
