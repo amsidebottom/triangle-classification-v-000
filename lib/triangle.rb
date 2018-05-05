@@ -12,7 +12,7 @@ class Triangle
       begin
         raise TriangleError
       rescue TriangleError => error
-        puts error.message
+          puts error.message
       end
     elsif (@length1 + @length2 < @length3) or (@length2 + @length3 < @length1) or (@length1 + @length3 < @length2)
       begin
