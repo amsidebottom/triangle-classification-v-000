@@ -9,7 +9,7 @@ class Triangle
   
   def kind
     if @length1=@length2 and @length2=@length3
-      self.kind = equilateral
+      return equilateral
     elsif (@length1=@length2 or @length2=@length3 or @length1=@length3) and self.kind!=equilateral
     
 end
