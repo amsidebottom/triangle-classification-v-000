@@ -18,7 +18,7 @@ class Triangle
       begin
         raise TriangleError
       rescue TriangleError => error
-          puts error.message
+        puts error.message
       end
     else
       if @length1==@length2 and @length2==@length3
