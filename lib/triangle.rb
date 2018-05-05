@@ -14,13 +14,15 @@ class Triangle
       rescue TriangleError => error
         puts error.message
       end
-      
-    if @length1=@length2 and @length2=@length3
-      return equilateral
-    elsif @length1=@length2 or @length2=@length3 or @length1=@length3
-      return isosceles
     else
-      return scalene
+      if @length1=@length2 and @length2=@length3
+        return equilateral
+      elsif @length1=@length2 or @length2=@length3 or @length1=@length3
+        return isosceles
+      else
+        return scalene
+      end
+    end
   end
   
   class TriangleError < StandardError
