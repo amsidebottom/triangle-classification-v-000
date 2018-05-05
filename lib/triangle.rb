@@ -10,8 +10,8 @@ class Triangle
   def kind
     if @length1 <= 0 || @length2 <= 0 || @length3 <= 0
       raise TriangleError
-      rescue TriangleError => error
-          puts error.message
+      #rescue TriangleError => error
+          #puts error.message
       end
     elsif (@length1 + @length2 < @length3) or (@length2 + @length3 < @length1) or (@length1 + @length3 < @length2)
       begin
