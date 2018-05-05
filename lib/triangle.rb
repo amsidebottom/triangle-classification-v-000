@@ -35,5 +35,6 @@ class Triangle
       "At least one triange side length is invalid. Please be sure all side lengths are greater than 0."
     end
   end
+end
   
 end
