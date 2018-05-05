@@ -8,8 +8,12 @@ class Triangle
   end
   
   def kind
+
     if @length1=@length2 and @length2=@length3
       return equilateral
-    elsif (@length1=@length2 or @length2=@length3 or @length1=@length3) and self.kind!=equilateral
+    elsif @length1=@length2 or @length2=@length3 or @length1=@length3
+      return isosceles
+    else
+      return scalene
     
 end
